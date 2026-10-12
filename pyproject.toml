@@ -1,0 +1,23 @@
+[project]
+name = "my-agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Unknown-Extreme", email = "minoreeghimire@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "langchain-google-genai>=4.4.1",
+    "langchain[anthropic]>=1.4.4",
+    "langgraph>=1.2.14",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+my-agents = "my_agents:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
